@@ -60,7 +60,11 @@ fig.update_layout(
 
 # 4. Guardar HTML interactivo
 Path("docs").mkdir(exist_ok=True)
-fig.write_html("docs/histograma.html", include_plotlyjs="cdn")
+fig.write_html(
+    "docs/histograma.html",
+    include_plotlyjs=True,
+    full_html=True
+)
 
 fig.show()
 print("Creado: docs/histograma.html")
