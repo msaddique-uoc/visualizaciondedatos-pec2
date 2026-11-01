@@ -61,7 +61,7 @@ fig.update_layout(
 
 # 4. Guardar como página HTML interactiva
 Path("docs").mkdir(exist_ok=True)
-fig.write_html("docs/violin.html")
+fig.write_html("docs/violin.html", include_plotlyjs="cdn")
 
 # Mostrar el gráfico
 fig.show()

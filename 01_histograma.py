@@ -62,7 +62,7 @@ fig.update_layout(
 Path("docs").mkdir(exist_ok=True)
 fig.write_html(
     "docs/histograma.html",
-    include_plotlyjs=True,
+    include_plotlyjs="cdn",
     full_html=True
 )
 

@@ -92,5 +92,5 @@ fig.update_layout(
 )
 
 Path("docs").mkdir(exist_ok=True)
-fig.write_html("docs/dendrograma.html")
+fig.write_html("docs/dendrograma.html", include_plotlyjs="cdn")
 fig.show()
